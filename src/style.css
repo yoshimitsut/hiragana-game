@@ -1,0 +1,13 @@
+.tile {
+  font-size: 2rem;
+  width: 4rem;
+  height: 4rem;
+  margin: .25rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.answer {
+  min-height: 5rem;
+  border-bottom: 3px dashed #999;
+}
