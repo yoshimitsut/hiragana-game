@@ -1,9 +1,34 @@
 import type { Word } from "./types.ts";
 
 export const words: Word[] = [
-    { id: 1, tiles: ["み", "ず"], romaji: "mizu", pt: "água", level: 1, category: "comida" },
-    { id: 2, tiles: ["ね", "こ"], romaji: "neko", pt: "gato", level: 1, category: "animais" },
-    { id: 3, tiles: ["い", "ぬ"], romaji: "inu", pt: "cachorro", level: 1, category: "animais" },
-    { id: 4, tiles: ["さ", "か", "な"], romaji: "sakana", pt: "peixe", level: 1, category: "animais" },
-    { id: 5, tiles: ["い", "え"], romaji: "ie", pt: "casa", level: 1, category: "casa" }
-]
+    { id: 1, tiles: ["い", "ぬ"], romaji: "inu", pt: "cachorro", level: 1, category: "animais", image: "inu.jpg" },
+    { id: 2, tiles: ["ね", "こ"], romaji: "neko", pt: "gato", level: 1, category: "animais", image: "neko.jpg" },
+    { id: 3, tiles: ["さ", "る"], romaji: "saru", pt: "macaco", level: 1, category: "animais", image: "saru.jpg" },
+    { id: 4, tiles: ["う", "し"], romaji: "ushi", pt: "vaca", level: 1, category: "animais", image: "ushi.jpg" },
+    { id: 5, tiles: ["う", "ま"], romaji: "uma", pt: "cavalo", level: 1, category: "animais", image: "uma.jpg" },
+    { id: 6, tiles: ["と", "り"], romaji: "tori", pt: "pássaro", level: 1, category: "animais", image: "tori.jpg" },
+    { id: 7, tiles: ["か", "め"], romaji: "kame", pt: "tartaruga", level: 1, category: "animais", image: "kame.jpg" },
+    { id: 8, tiles: ["く", "ま"], romaji: "kuma", pt: "urso", level: 1, category: "animais", image: "kuma.jpg" },
+    { id: 9, tiles: ["ぞ", "う"], romaji: "zou", pt: "elefante", level: 1, category: "animais", image: "zou.jpg" },
+    { id: 10, tiles: ["ひ", "つ", "じ"], romaji: "hitsuji", pt: "ovelha", level: 1, category: "animais", image: "hitsuji.jpg" },
+    { id: 11, tiles: ["さ", "か", "な"], romaji: "sakana", pt: "peixe", level: 1, category: "animais", image: "sakana.jpg" },
+    { id: 12, tiles: ["う", "さ", "ぎ"], romaji: "usagi", pt: "coelho", level: 1, category: "animais", image: "usagi.jpg" },
+    { id: 13, tiles: ["ら", "い", "お", "ん"], romaji: "raion", pt: "leão", level: 1, category: "animais", image: "raion.jpg" },
+    { id: 14, tiles: ["ぱ", "ん", "だ"], romaji: "panda", pt: "panda", level: 1, category: "animais", image: "panda.jpg" },
+    { id: 15, tiles: ["か", "ば"], romaji: "kaba", pt: "hipopótamo", level: 1, category: "animais", image: "kaba.jpg" },
+    { id: 16, tiles: ["へ", "び"], romaji: "hebi", pt: "cobra", level: 1, category: "animais", image: "hebi.jpg" },
+    { id: 17, tiles: ["か", "え", "る"], romaji: "kaeru", pt: "sapo", level: 1, category: "animais", image: "kaeru.jpg" },
+    { id: 18, tiles: ["あ", "ひ", "る"], romaji: "ahiru", pt: "pato", level: 1, category: "animais", image: "ahiru.jpg" },
+    { id: 19, tiles: ["た", "ぬ", "き"], romaji: "tanuki", pt: "cão-guaxinim japonês", level: 1, category: "animais", image: "tanuki.jpg" },
+    { id: 20, tiles: ["き", "つ", "ね"], romaji: "kitsune", pt: "raposa", level: 1, category: "animais", image: "kitsune.jpg" },
+    { id: 21, tiles: ["し", "か"], romaji: "shika", pt: "veado", level: 1, category: "animais", image: "shika.jpg" },
+    { id: 22, tiles: ["ね", "ず", "み"], romaji: "nezumi", pt: "rato", level: 1, category: "animais", image: "nezumi.jpg" },
+    { id: 23, tiles: ["ふ", "く", "ろ", "う"], romaji: "fukurou", pt: "coruja", level: 1, category: "animais", image: "fukurou.jpg" },
+    { id: 24, tiles: ["い", "る", "か"], romaji: "iruka", pt: "golfinho", level: 1, category: "animais", image: "iruka.jpg" },
+    { id: 25, tiles: ["く", "じ", "ら"], romaji: "kujira", pt: "baleia", level: 1, category: "animais", image: "kujira.jpg" },
+    { id: 26, tiles: ["た", "こ"], romaji: "tako", pt: "polvo", level: 1, category: "animais", image: "tako.jpg" },
+    { id: 27, tiles: ["か", "に"], romaji: "kani", pt: "caranguejo", level: 1, category: "animais", image: "kani.jpg" },
+    { id: 28, tiles: ["ちょ", "う"], romaji: "chou", pt: "borboleta", level: 1, category: "animais", image: "chou.jpg" },
+    { id: 29, tiles: ["は", "ち"], romaji: "hachi", pt: "abelha", level: 1, category: "animais", image: "hachi.jpg" },
+    { id: 30, tiles: ["と", "ら"], romaji: "tora", pt: "tigre", level: 1, category: "animais", image: "tora.jpg" }
+];

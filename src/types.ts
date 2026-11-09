@@ -7,4 +7,5 @@ export interface Word {
     pt: string;
     category: Category;
     level: 1 | 2 | 3;
+    image: string;
 }
