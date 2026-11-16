@@ -21,22 +21,21 @@ function render() {
   app.innerHTML = `
     <header class="game-header">
       <div class="challenge-prompt">Monte a palavra em Hiragana</div>
-      ${
-        state.word.image
-          ? `<div class="word-image-wrapper">
+      ${state.word.image
+      ? `<div class="word-image-wrapper">
                <img src="${state.word.image}" alt="${state.word.pt}" class="word-image" />
              </div>`
-          : ""
-      }
+      : ""
+    }
       <h1 class="target-word">${state.word.pt}</h1>
     </header>
 
     <!-- Slots / Buracos estilo Duolingo -->
     <div class="slots-container">
       ${state.slots
-        .map((tile, idx) => {
-          if (tile) {
-            return `
+      .map((tile, idx) => {
+        if (tile) {
+          return `
               <div class="slot occupied" data-slot="${idx}">
                 <button
                   class="tile"
@@ -48,8 +47,8 @@ function render() {
                 >${tile.char}</button>
               </div>
             `;
-          } else {
-            return `
+        } else {
+          return `
               <div
                 class="slot empty"
                 data-slot="${idx}"
@@ -57,16 +56,16 @@ function render() {
                 title="Solte o ideograma aqui"
               ></div>
             `;
-          }
-        })
-        .join("")}
+        }
+      })
+      .join("")}
     </div>
 
     <!-- Banco de ideogramas disponíveis -->
     <div class="pool" data-pool-area="true">
       ${state.pool
-        .map(
-          (tile) => `
+      .map(
+        (tile) => `
             <button
               class="tile"
               draggable="true"
@@ -75,30 +74,29 @@ function render() {
               title="Clique para enviar ou arraste até o buraco"
             >${tile.char}</button>
           `
-        )
-        .join("")}
+      )
+      .join("")}
     </div>
 
     <!-- Feedback e Próxima Palavra -->
     <div class="feedback-box">
-      ${
-        complete
-          ? correct
-            ? `
+      ${complete
+      ? correct
+        ? `
               <div class="feedback-msg correct">
                 <span>🎉</span>
                 <span>Excelente! (${state.word.romaji})</span>
               </div>
               <button class="btn-next" id="btn-next">Continuar →</button>
             `
-            : `
+        : `
               <div class="feedback-msg wrong">
                 <span>❌</span>
                 <span>Não foi dessa vez, tente novamente!</span>
               </div>
             `
-          : `<p style="color: var(--text-muted); font-size: 0.9rem;">Arraste ou clique nos ideogramas para preencher os espaços</p>`
-      }
+      : `<p style="color: var(--text-muted); font-size: 0.9rem;">Arraste ou clique nos ideogramas para preencher os espaços</p>`
+    }
     </div>
   `;
 
@@ -282,7 +280,7 @@ function setupTouchDrag() {
       document.querySelectorAll(".slot.drag-over").forEach((s) => s.classList.remove("drag-over"));
 
       if (!hasMoved) {
-        return; // Foi apenas um toque/tap, o listener de click cuidará
+        return;
       }
 
       tileEl.dataset.wasDragged = "true";
